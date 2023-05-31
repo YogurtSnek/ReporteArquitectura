@@ -1,0 +1,213 @@
+
+/*--------------------------------Color Pallete---------------------------------*/
+/*
+* #1f4968 = Saturated Blue
+* #1ee3ce = Cyan
+* #525151 = grayish
+* #6262c5 = Purple
+* #fff9f9 = white
+
+
+*Fonts
+*Text:      font-family: 'Inconsolata', monospace;
+*Titles:    font-family: 'Alegreya Sans', sans-serif;
+*/
+
+/*--------------------------------Basic Settings---------------------------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-image: url("../Assets/Matrix.gif");
+    background-color: #1f4968;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+/*--------------------------------Header---------------------------------*/
+
+.HeadContainer {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+}
+
+.Header {
+    padding: 5px;
+    text-align: center;
+    background: url("../Assets/Servers.jpg") no-repeat center;
+    background-size: cover;
+    border: #1ee3ce 3px;
+    border-style: none solid none solid;
+    font-family: 'Alegreya Sans', sans-serif; 
+}
+
+.Header h2 {
+    font-size: 2.3em;
+    color:  #6262c5;
+}
+
+.Header h1 {
+    font-size: 3.2em;
+    color:  #fff9f9;
+}
+
+/*--------------------------------Main Page Sticker---------------------------------*/
+
+.Sticker {
+    top: 1.3em;
+    left: 2em;
+    position: absolute;
+}
+
+/*--------------------------------Navigation Bar---------------------------------*/
+
+
+/*--- General NavBar Settings ---*/
+.NavBar {
+    /*General Position Settings*/
+    
+    /*Sizes*/
+    max-height: 48px;
+    width: 100%;
+    
+    /*Border Stylings to the Navbar*/ 
+    border: #1ee3ce 3px;
+    border-style: solid none none none;
+    border-radius: 0px 0px 25px 25px;
+
+    /*Color*/
+    background-color: rgb(43, 43, 43);
+
+    /*Alignment*/
+    text-align: center;
+}
+
+.NavBar .OptionContainer {
+    margin: 0;
+    padding: 0;
+}
+
+.NavBar ul {
+    list-style: none;
+}
+
+/*--- Menu Positioning Rules ---*/
+.NavBar .MainOptions {
+    /*---Position ---*/
+    position: relative;
+    display: inline-block;
+    z-index: 1000;
+    /*---Sizes---*/
+    max-height: 48px;
+
+    
+}
+
+/*--- Option Decoration Settings ---*/
+.NavBar li a {
+    float: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Inconsolata', monospace;
+}
+
+.NavBar li a:hover {
+    background-color: white;
+    color: rgb(43, 43, 43);
+}
+
+.NavBar li:hover .Dropdown {
+    display: block;
+}
+
+.NavBar li a.active {
+    background-color: #1ee3ce;
+    color: rgb(43, 43, 43);
+}
+
+/*--- NavBar DropDown Menu ---*/
+.Dropdown {
+    display: none;
+    position: absolute;
+    padding: 48px 0 0 0;
+    z-index: 10;
+}
+
+
+
+/*--- Class for Sticky NavBar ---*/
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/*--------------------------------Main Content---------------------------------*/
+
+.BodyContainer {
+    margin: 0;
+    padding: 16px;
+    position: relative;
+    width: 100%;
+    color: #1ee3ce;
+    font-family: 'Inconsolata', monospace;
+}
+
+.Content {
+    opacity: 1.0;
+}
+
+.ExtraPadding + .BodyContainer{
+    padding-top: 60px;
+}
+
+.BodyContainer p {
+    font-size: 1.3em;
+}
+
+
+.Column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+}
+
+
+.Lateral-Column {
+    float: left;
+    width: 30%;
+}
+
+.Middle-Column {
+    float: left;
+    width: 40%;
+}
+
+.Row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*--------------------------------Foot Notes---------------------------------*/
+
+.FootContainer {
+    font-family: 'Inconsolata', monospace;
+    padding: 12px 15px;
+    border: #1ee3ce 3px;
+    border-style: solid solid none solid;
+    border-radius: 50px 50px 0px 0px;
+    background-color: rgb(43, 43, 43);
+    color: #fff9f9;
+    text-align: center;
+    
+}
