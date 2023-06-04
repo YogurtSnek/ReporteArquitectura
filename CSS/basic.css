@@ -21,7 +21,6 @@
 
 body {
     margin: 0;
-    background-image: url("../Assets/Matrix.gif");
     background-color: #1f4968;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -44,7 +43,7 @@ body {
     background: url("../Assets/Servers.jpg") no-repeat center;
     background-size: cover;
     border: #1ee3ce 3px;
-    border-style: none solid none solid;
+    border-style: none solid solid solid;
     font-family: 'Alegreya Sans', sans-serif; 
 }
 
@@ -60,26 +59,44 @@ body {
 
 /*--------------------------------Main Page Sticker---------------------------------*/
 
-.Sticker {
+#HeadSticker {
     top: 1.3em;
     left: 2em;
     position: absolute;
+
+    /*Animation*/
+    animation: yogurtBob 3.2s ease-in-out 2s infinite forwards;
+
 }
+
+#NavSticker {
+    top: .5em;
+    left: 2.4em;
+
+    position: relative;
+    opacity: 0.0;
+    float: left;
+
+    /*Fading Out Settings*/
+}
+
+#AuxNavSticker{
+
+    animation: yogurtBob 3.2s ease-in-out 2s infinite forwards;
+}
+
+
 
 /*--------------------------------Navigation Bar---------------------------------*/
 
 
 /*--- General NavBar Settings ---*/
-.NavBar {
-    /*General Position Settings*/
-    
+#NavBar {
     /*Sizes*/
-    max-height: 48px;
+    height: 80px;
     width: 100%;
     
     /*Border Stylings to the Navbar*/ 
-    border: #1ee3ce 3px;
-    border-style: solid none none none;
     border-radius: 0px 0px 25px 25px;
 
     /*Color*/
@@ -87,87 +104,110 @@ body {
 
     /*Alignment*/
     text-align: center;
+    
 }
 
-.NavBar .OptionContainer {
+#NavBar .OptionContainer {
+    max-height: 80px;
     margin: 0;
     padding: 0;
 }
 
-.NavBar ul {
+#NavBar ul {
     list-style: none;
 }
 
+#NavBar a {
+    min-height: 79px;
+}
+
 /*--- Menu Positioning Rules ---*/
-.NavBar .MainOptions {
+#NavBar .MainOptions {
     /*---Position ---*/
     position: relative;
     display: inline-block;
     z-index: 1000;
-    /*---Sizes---*/
-    max-height: 48px;
-
-    
 }
 
 /*--- Option Decoration Settings ---*/
-.NavBar li a {
+#NavBar li a {
     float: left;
-    padding: 14px 16px;
+    padding: 12px 16px;
     text-decoration: none;
     color: white;
     font-family: 'Inconsolata', monospace;
 }
 
-.NavBar li a:hover {
+#NavBar li a:hover {
     background-color: white;
-    color: rgb(43, 43, 43);
+    color: #2b2b2b;
 }
 
-.NavBar li:hover .Dropdown {
+#NavBar li:hover .Dropdown {
     display: block;
+    z-index: 10000;
+    background-color: #2b2b2b;
+    margin: 0;
+    padding: 0;
 }
 
-.NavBar li a.active {
+
+#NavBar li a.active {
     background-color: #1ee3ce;
-    color: rgb(43, 43, 43);
+    color: #2b2b2b;
 }
 
 /*--- NavBar DropDown Menu ---*/
 .Dropdown {
     display: none;
     position: absolute;
-    padding: 48px 0 0 0;
+
+    box-shadow: black 0px 0px 5px 0px;
+
     z-index: 10;
+    top: 75px;
+}
+
+.Dropdown a {
+    width: 100%;
+    height: auto;
 }
 
 
 
-/*--- Class for Sticky NavBar ---*/
+/*--- Classes for Sticky NavBar ---*/
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 2000;
+}
+
+.extraPad {
+    padding-top: 90px;
 }
 
 /*--------------------------------Main Content---------------------------------*/
 
 .BodyContainer {
+    /*Sizes*/
     margin: 0;
-    padding: 16px;
-    position: relative;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
     width: 100%;
+    
+    /*Position*/
+    position: relative;
+    
+    /*Decoration*/
     color: #1ee3ce;
     font-family: 'Inconsolata', monospace;
+    
+    /*Layer*/
+    z-index: 100;
 }
 
-.Content {
-    opacity: 1.0;
-}
-
-.ExtraPadding + .BodyContainer{
-    padding-top: 60px;
-}
 
 .BodyContainer p {
     font-size: 1.3em;
@@ -203,11 +243,48 @@ body {
 .FootContainer {
     font-family: 'Inconsolata', monospace;
     padding: 12px 15px;
-    border: #1ee3ce 3px;
-    border-style: solid solid none solid;
     border-radius: 50px 50px 0px 0px;
     background-color: rgb(43, 43, 43);
     color: #fff9f9;
     text-align: center;
     
+}
+
+
+/*--------------------------------Animation---------------------------------*/
+
+@keyframes yogurtBob {
+    30% {
+        transform: rotate(35deg);
+    }
+
+    60% {
+        transform: rotate(-15deg);
+    }
+
+    80% {
+        transform: rotate(0deg);
+    }
+}
+
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1.0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
 }
