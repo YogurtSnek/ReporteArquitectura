@@ -192,8 +192,6 @@ body {
 .BodyContainer {
     /*Sizes*/
     margin: 0;
-    padding-left: 16px;
-    padding-right: 16px;
     padding-bottom: 16px;
     width: 100%;
     
@@ -214,27 +212,58 @@ body {
 }
 
 
-.Column {
-    float: left;
-    width: 33.33%;
-    padding: 15px;
+/*--- Classes for general content use ---*/
+.parallax {
+    /* The image used CAN AND SHOULD BE CHANGED*/
+    background-image: url("../Assets/Servers.jpg");
+  
+    /* Set a specific height CAN AND SHOULD BE CHANGED*/
+    min-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    /*Extra Settings*/
+    margin: 0;
+    padding: 0;
+  }
+
+#ParallaxContent {
+    border: #1ee3ce 3px solid;
+    backdrop-filter: blur(5px);
+    height: 250px;
 }
 
 
-.Lateral-Column {
-    float: left;
-    width: 30%;
+.Content {
+    text-align: center;
+    width: 650px;
+    margin: auto;
 }
 
-.Middle-Column {
-    float: left;
-    width: 40%;
+.Primary-Title {
+    font-size: 1.7em; 
+    text-decoration: underline;
+    text-shadow: #3172a0 5px 0 3px;
+    text-align: center;
 }
 
-.Row::after {
-    content: "";
-    display: table;
-    clear: both;
+.Secondary-Title {
+    font-size: 1.45em; 
+    text-decoration: underline;
+    text-shadow: #547b99 5px 0 3px;
+    text-align: center;
+}
+
+.Tertiary-Title {
+    font-size: 1.25em; 
+    text-decoration: underline;
+    text-shadow: #6595b9 5px 0 3px;
+    text-align: center;
 }
 
 

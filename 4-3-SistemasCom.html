@@ -1,0 +1,288 @@
+<!DOCTYPE html5>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/basic.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital@1&family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+    <title>Reporte de Unidad 4</title>
+</head>
+<body>
+    <div class="HeadContainer">
+        <div class="Header">
+            <H1>Procedimientos en Paralelo</H1>
+            <h2>Arquitectura de Computadoras</h2>
+        </div>
+        <div id="HeadSticker">
+            <a href="index.html"><img src="Assets/Yogurt.png" alt="It's a Yogurt Snek, with a fashionable tie" width="160"></a>
+        </div>
+        <div id="NavBar">
+            <div id="NavSticker" style="animation: fadeOut 0s linear 0s 1 normal forwards; pointer-events: none;">
+                <div id="AuxNavSticker">
+                    <a href="index.html"><img src="Assets/Yogurt.png" alt="It's a Yogurt Snek, with a fashionable tie" width="55"></a>
+                </div>
+            </div>
+            <ul class="OptionContainer">
+                <li class="MainOptions">
+                    <a href="4-1-Aspectos.html">
+                        Aspectos Basicos <br>
+                        de la computadora <br>
+                        paralela   <br>
+                    </a>
+                </li>
+                <li class="MainOptions">
+                    <a href="4-2-Tipos.html">
+                        Tipos de computacion <br>
+                        paralela
+                    </a>
+                    <ul class="Dropdown">
+                        <li>
+                            <a href="4-2-Tipos.html#4-2-1">
+                                Taxonomia de las Arquitecturas Paralelas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="4-2-Tipos.html#4-2-2">
+                                Arquitectura de las Computadoras
+                            </a>
+                            <ul class="Dropdown" style="left: 100%; top: 0;">
+                                <li>
+                                    <a href="4-2-Tipos.html#4-2-2-1">
+                                        Taxonomia de Flynn
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="4-2-Tipos.html#4-2-2-2">
+                                        Organizacion del Espacio de Direcciones de Memoria
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="MainOptions">
+                    <a href="4-3-SistemasCom.html">
+                        Sistemas de Memoria <br>
+                        Compartida: <br>
+                        Multiprocesadores
+                    </a>
+                    <ul class="Dropdown">
+                        <li>
+                            <a href="4-3-SistemasCom.html#4-3-1">
+                                Redes de Interconexion Dinamicas o Indirectas
+                            </a>
+                            <ul class="Dropdown" style="left: 100%; top: 0;">
+                                <li>
+                                    <a href="4-3-SistemasCom.html#4-3-1-1">
+                                        Redes de Medio Compartido
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="4-3-SistemasCom.html#4-3-1-2">
+                                        Redes Conmutadas
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="4-3-SistemasCom.html#4-3-2">
+                                Coherencia de Cache
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="MainOptions">
+                    <a href="4-4-SistemasDis.html">
+                        Sistemas de Memoria <br>
+                        Distribuida: <br> 
+                        Multicomputadoras: Clusters
+                    </a>
+                    <ul class="Dropdown">
+                        <li>
+                            <a href="4-4-SistemasDis.html#4-4-1">
+                                Redes de Interconexion Estaticas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="4-4-SistemasDis.html#4-4-2">
+                                Cluster
+                            </a>
+                        </li>
+                        <li>
+                            <a href="4-4-SistemasDis.html#4-4-3">
+                                Programacion de Clusters
+                            </a>
+                        </li>
+                        <li>
+                            <a href="4-4-SistemasDis.html#4-4-4">
+                                Consideraciones sobre el Rendimiento de los Clusters
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="MainOptions">
+                    <a href="4-5-Casos.html">
+                        Casos de Estudio
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="BodyContainer">
+        <div class="Content">
+        
+            <h3 class="Primary-Title">
+                Sistemas de Memoria Compartida: Multiprocesadores
+            </h3>
+
+            <br><br>
+
+            <p>
+                <p>
+                Un multiprocesador es un tipo de computadora paralela compuesta por varios procesadores interconectados que comparten un sistema de memoria. Estos sistemas son arquitecturas MIMD (Multiple Instruction Multiple Data) con memoria compartida, lo que significa que tienen un único espacio de direcciones para todos los procesadores y utilizan el paso de mensajes como mecanismo de comunicación desde la perspectiva del programador.
+                </p>
+
+                <br><br><br>
+
+                <p>
+                Los multiprocesadores también se conocen como sistemas de memoria compartida, ya que los procesadores pueden acceder a diferentes módulos de memoria y compartir la misma información. La forma en que los procesadores comparten la memoria determina su clasificación en sistemas multiprocesador UMA (Uniform Memory Access), NUMA (Non-Uniform Memory Access) y COMA (Cache-Only Memory Architecture).
+                </p>
+
+                <br><br><br>
+
+                <p>
+                El multiproceso se refiere al uso de múltiples procesos concurrentes en lugar de un solo proceso en un momento dado. Aunque la multitarea permite que varios procesos compartan una sola CPU, en el caso del multiproceso, se utilizan múltiples CPU para ejecutar múltiples hilos dentro de un solo proceso.
+                </p>
+
+                <br><br><br>
+
+                <p>
+                El multiproceso para tareas generales puede ser sencillo de lograr, ya que puede haber varios programas manipulando datos internos simultáneamente. Esto puede resultar en interferencias si dos copias del programa se ejecutan en diferentes procesadores y tratan de leer o escribir en su estado al mismo tiempo.
+                </p>
+
+            </p>
+        </div>
+
+        <div class="parallax" style="background-image: url('Assets/Processor.jpg'); padding-top:125px;height:375px;width:100%;">
+            <div class="Content" id="ParallaxContent" style="margin-left:auto;margin-right:auto;">
+                <p>
+                    <b>
+                    <br>
+                    En el Paralelismo de Tareas
+                    <br><br>
+                    se realizan calculos completamente
+                    <br><br>
+                    diferentes con conjuntos iguales
+                    <br><br>
+                    o diferentes de datos
+                    </b>
+                </p>
+            </div>
+        </div>
+
+        <div class="Content">
+            <p>
+                <br><br><br>
+
+                <h3 class="Secondary-Title" id="4-3-1">Redes de Interconexión Dinámicas o Indirectas</h3>
+
+                <br><br>
+
+                <p>
+                Uno de los criterios más importantes para la clasificación de las redes es el que tiene en cuenta la situación de la red en la máquina paralela, dando lugar a dos familias de redes: redes estáticas y redes dinámicas. Una red estática es una red cuya topología queda definida de manera definitiva y estable durante la construcción de la máquina paralela.
+                </p>
+
+                <br><br><br>
+
+                <p>
+                La red simplemente une los diversos elementos de acuerdo a una configuración dada. Se utiliza sobre todo en el caso de los multicomputadores para conectar los diversos procesadores que posee la máquina. Por la red sólo circulan los mensajes entre procesadores, por lo que se dice que la red presenta un acoplamiento débil. En general, en las redes estáticas se exige poca carga a la red.
+                </p>
+            
+                <br><br><br>
+
+                <p>
+                Una red dinámica es una red cuya topología puede variar durante el curso de la ejecución de un programa paralelo o entre dos ejecuciones de programas. La red está constituida por elementos materiales específicos, llamados conmutadores o switches.
+                </p>
+
+                <br><br><br>
+
+                <p>
+                Las redes dinámicas se utilizan sobre todo en los multiprocesadores. En este caso, la red une los procesadores a los bancos de memoria central. Cualquier acceso de un procesador a la memoria (bien sea para acceder a los datos o a las instrucciones) debe pasar a través de la red, por lo se dice que la red tiene un acoplamiento fuerte. La red debe poseer un rendimiento extremadamente bueno para no demorar demasiado a los procesadores que acceden a memoria.
+                </p>
+
+                <br><br><br>
+
+            </p>
+        </div>
+
+        <div class="parallax" style="background-image: url('Assets/Circuitry.jpg'); padding-top:125px;height:375px;width:100%;">
+            <div class="Content" id="ParallaxContent" style="margin-left:auto;margin-right:auto;">
+                <p>
+                    <b>
+                    <br>
+                    Las computadores se pueden clasificar
+                    <br><br>
+                    en el nivel en las que
+                    <br><br>
+                    su hardware es capaz de soportar
+                    <br><br>
+                    el paralelismo
+                    </b>
+                </p>
+            </div>
+        </div>
+
+        
+        <div class="Content">
+            <p>
+                <br><br><br>
+
+                <h3 class="Secondary-Title" id="4-3-1-1">Redes de Medio Compartido</h3>
+
+                <br><br>
+
+                <p>
+                    En estas redes de medio compartido, sólo un dispositivo puede utilizar la red en un momento dado. Cada elemento conectado a la red tiene circuitos para manejar el paso de direcciones y datos. Una característica de un medio compartido es la posibilidad de soportar un broadcast atómico en donde todos los dispositivos conectados al medio pueden monitorizar actividades y recibir la información que se esta transmitiendo en el medio compartido.
+                </p>
+
+                <br><br><br>
+
+                <p>
+                    En estos protocolos, no es necesario definir rutas de transmisión de comandos, ya que los comandos se transmiten uniformemente en el bus compartido. Se aplican políticas de actualización de escritura simultánea y de escritura simultánea, siendo la primera utilizada para bloques privados y la segunda para bloques compartidos. Se describen los posibles estados de los bloques en las cachés, que incluyen: válido-exclusivo (bloque único y consistente), compartido (varias copias en caché y consistentes) y sucio (bloque único e inconsistente).    
+                </p>
+            
+                <br><br><br>
+
+                <p>
+                    En el caso de un acierto de escritura, si el estado del bloque es válido-exclusivo o sucio, la operación de escritura se realizará localmente y el estado cambiará a sucio. Si el bloque está compartido, se transmitirá un comando de actualización y todas las copias, incluida la memoria, se actualizarán y permanecerán compartidas.
+                </p>
+
+                <br><br><br>
+
+                <p>
+                    En caso de un error de escritura, se transmitirá un comando de escritura. Si solo la memoria contiene el bloque, se actualizará con el nuevo valor de datos. Si hay copias compartidas disponibles, todas se actualizarán y el bloque actualizado se enviará al procesador solicitante. Si hay una copia sucia o exclusiva válida, se actualizará y el bloque de memoria y el bloque actualizado se enviarán al procesador solicitante. En todos los casos, se compartirá el estado resultante de todas las copias.
+                </p>
+
+                <br><br><br>
+
+            </p>
+        </div>
+  </div>
+
+    
+
+    <div class="FootContainer">
+        <p>Credits</p>
+        <address>
+            Programmer: Johan Gurrola <br>
+            Writer: Gabriel Alejandro
+        </address>
+    </div>
+
+    <script src="JS/GeneralFuncs.js"></script>    
+</body>
+</html>

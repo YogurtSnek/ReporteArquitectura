@@ -1,0 +1,105 @@
+
+/*--------------------------------Color Pallete---------------------------------*/
+/*
+* #1f4968 = Saturated Blue
+* #1ee3ce = Cyan
+* #525151 = grayish
+* #6262c5 = Purple
+* #fff9f9 = white
+
+
+*Fonts
+*Text:      font-family: 'Inconsolata', monospace;
+*Indexes:    font-family: 'Alegreya Sans', sans-serif;
+
+
+*A friendly reminder that all of the basic settings for the pages design are in the "basic.css" file 
+
+*/
+
+/*--------------------------------Content---------------------------------*/
+
+#WelcomeTitle {
+    font-size: 1.7em; 
+    text-decoration: underline;
+    text-shadow: #3172a0 5px 0 3px;
+    text-align: center;
+}
+
+#WelcomeDesc {
+    font-size: 1.2em;
+    color: #57bdb3;
+    text-align: center;
+}
+
+/*--- Redirects ---*/
+.BodyContainer a {
+    text-decoration: none;
+}
+
+.BodyContainer a:link {
+    text-decoration: none;
+}
+.BodyContainer a:visited {
+    text-decoration: none;
+}
+.BodyContainer a:hover {
+    text-decoration: none;
+}
+
+.BodyContainer ul {
+    list-style: none;
+}
+
+.BodyContainer li {
+    padding: 5px;
+}
+
+/*--- Title Customization ---*/
+/*Primary*/
+.Primary-Indexes a:link {
+    font-size: 1.3em;
+    color: #00ffe5;
+}
+
+.Primary-Indexes a:visited {
+    font-size: 1.3em;
+    color: #00ffe5;
+}
+
+.Primary-Indexes a:hover {
+    background-color: #81cbff;
+    color: #003144
+}
+
+/*Secondary*/
+.Secondary-Indexes a:link {
+    font-size: 1.1em;
+    color: #13c4b2;
+}
+
+.Secondary-Indexes a:visited {
+    font-size: 1.1em;
+    color: #13c4b2;
+}
+
+.Secondary-Indexes a:hover {
+    background-color: #81cbff;
+    color: #003144
+}
+
+/*Tertiary*/
+.Tertiary-Indexes a:link {
+    font-size: 1em;
+    color: #2ba397;
+}
+
+.Tertiary-Indexes a:visited {
+    font-size: 1em;
+    color: #2ba397;
+}
+
+.Tertiary-Indexes a:hover {
+    background-color: #81cbff;
+    color: #003144
+}

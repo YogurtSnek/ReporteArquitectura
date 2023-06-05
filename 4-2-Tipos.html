@@ -1,0 +1,388 @@
+<!DOCTYPE html5>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/basic.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital@1&family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+    <title>Reporte de Unidad 4</title>
+</head>
+<body>
+    <div class="HeadContainer">
+        <div class="Header">
+            <H1>Procedimientos en Paralelo</H1>
+            <h2>Arquitectura de Computadoras</h2>
+        </div>
+        <div id="HeadSticker">
+            <a href="index.html"><img src="Assets/Yogurt.png" alt="It's a Yogurt Snek, with a fashionable tie" width="160"></a>
+        </div>
+        <div id="NavBar">
+            <div id="NavSticker" style="animation: fadeOut 0s linear 0s 1 normal forwards; pointer-events: none;">
+                <div id="AuxNavSticker">
+                    <a href="index.html"><img src="Assets/Yogurt.png" alt="It's a Yogurt Snek, with a fashionable tie" width="55"></a>
+                </div>
+            </div>
+            <ul class="OptionContainer">
+                <li class="MainOptions">
+                    <a href="4-1-Aspectos.html">
+                        Aspectos Basicos <br>
+                        de la computadora <br>
+                        paralela   <br>
+                    </a>
+                </li>
+                <li class="MainOptions">
+                    <a href="4-2-Tipos.html">
+                        Tipos de computacion <br>
+                        paralela
+                    </a>
+                    <ul class="Dropdown">
+                        <li>
+                            <a href="4-2-Tipos.html#4-2-1">
+                                Taxonomia de las Arquitecturas Paralelas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="4-2-Tipos.html#4-2-2">
+                                Arquitectura de las Computadoras
+                            </a>
+                            <ul class="Dropdown" style="left: 100%; top: 0;">
+                                <li>
+                                    <a href="4-2-Tipos.html#4-2-2-1">
+                                        Taxonomia de Flynn
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="4-2-Tipos.html#4-2-2-2">
+                                        Organizacion del Espacio de Direcciones de Memoria
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="MainOptions">
+                    <a href="4-3-SistemasCom.html">
+                        Sistemas de Memoria <br>
+                        Compartida: <br>
+                        Multiprocesadores
+                    </a>
+                    <ul class="Dropdown">
+                        <li>
+                            <a href="4-3-SistemasCom.html#4-3-1">
+                                Redes de Interconexion Dinamicas o Indirectas
+                            </a>
+                            <ul class="Dropdown" style="left: 100%; top: 0;">
+                                <li>
+                                    <a href="4-3-SistemasCom.html#4-3-1-1">
+                                        Redes de Medio Compartido
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="4-3-SistemasCom.html#4-3-1-2">
+                                        Redes Conmutadas
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="4-3-SistemasCom.html#4-3-2">
+                                Coherencia de Cache
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="MainOptions">
+                    <a href="4-4-SistemasDis.html">
+                        Sistemas de Memoria <br>
+                        Distribuida: <br> 
+                        Multicomputadoras: Clusters
+                    </a>
+                    <ul class="Dropdown">
+                        <li>
+                            <a href="4-4-SistemasDis.html#4-4-1">
+                                Redes de Interconexion Estaticas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="4-4-SistemasDis.html#4-4-2">
+                                Cluster
+                            </a>
+                        </li>
+                        <li>
+                            <a href="4-4-SistemasDis.html#4-4-3">
+                                Programacion de Clusters
+                            </a>
+                        </li>
+                        <li>
+                            <a href="4-4-SistemasDis.html#4-4-4">
+                                Consideraciones sobre el Rendimiento de los Clusters
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="MainOptions">
+                    <a href="4-5-Casos.html">
+                        Casos de Estudio
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="BodyContainer">
+        <div class="Content">
+        
+            <h3 class="Primary-Title">
+                Tipos de computacion paralela
+            </h3>
+
+            <p>
+
+                <br><br><br>
+
+                El paralelismo es un principio de computación que consiste en dividir grandes problemas en partes más pequeñas y resolverlas simultáneamente. La computación paralela se basa en este principio y utiliza técnicas de programación para ejecutar múltiples instrucciones al mismo tiempo. Existen diferentes tipos de computación paralela, como el paralelismo a nivel de bit, instrucción, datos y tareas.
+
+                <br><br><br>
+
+                En los últimos años, el interés por la computación paralela ha secado debido a las limitaciones físicas que impiden el aumento de la frecuencia de los procesadores. La computación paralela se ha convertido en el paradigma dominante en la arquitectura de computadoras, especialmente en los procesadores multinúcleo. Sin embargo, el consumo de energía de los ordenadores paralelos se ha convertido en una preocupación.
+
+
+               <br><br><br>
+
+            </p>
+        </div>
+
+        <div class="parallax" style="background-image: url('Assets/Servers2.jpg'); padding-top:125px;height:375px;width:100%;">
+            <div class="Content" id="ParallaxContent" style="margin-left:auto;margin-right:auto;">
+                <p>
+                    <b>
+                        <br>
+                        Michael J. Flynn 
+                        <br><br>
+                        creó uno de los primeros sistemas 
+                        <br><br>
+                        de clasificación de computadoras, 
+                        <br><br>
+                        programas paralelos y secuenciales.
+                        <br>
+                    </b>
+                </p>
+            </div>
+        </div>
+
+        <div class="Content">
+            <p>
+                <br><br><br>
+
+                La programación paralela es más compleja que la programación secuencial, ya que la concurrencia introduce nuevos tipos de errores y la comunicación y contraste entre las subtareas son desafiantes. El rendimiento de los programas paralelos depende de la ley de Amdahl, que establece la máxima mejora posible cuando solo una parte del sistema se mejora.
+
+                <br><br><br>
+
+                La computación en serie se basa en la secuencia de instrucciones en una sola unidad central de procesamiento, mientras que la computación en paralelo utiliza múltiples elementos de procesamiento para resolver problemas. Estos elementos pueden incluir procesadores multinúcleo, computadoras en red, hardware especializado o una combinación de ellos.
+
+
+                <br><br><br>
+
+
+                Existen diferentes clases de computadoras paralelas según el nivel de paralelismo que se revela. Las computadoras multinúcleo tienen múltiples núcleos en un solo chip, los multiprocesadores simétricos comparten memoria y están conectados a través de un bus, las computadoras distribuidas utilizan una red para conectar los elementos de procesamiento y los clusters son grupos de computadoras conectadas en red. Además, existe el procesamiento paralelo masivo, que es un solo equipo con varios procesadores conectados en rojo.
+
+                <br><br><br>
+
+                La computación distribuida es una forma de computación paralela en la que los ordenadores se comunican a través de Internet para trabajar en un problema dado. Sin embargo, debido a las limitaciones de ancho de banda y alta latencia de Internet, la computación distribuida suele limitarse a problemas paralelos.
+
+                <br><br><br>
+
+            </p>
+        </div>
+
+        <div class="parallax" style="background-image: url('Assets/Servers3.jpg'); padding-top:125px;height:375px;width:100%;">
+            <div class="Content" id="ParallaxContent" style="margin-left:auto;margin-right:auto;">
+                <p>
+                    <b>
+                        <br>
+                        Paralelismo de grano fino
+                        <br><br>
+                        es cuando una aplicacion con muchas 
+                        <br><br>
+                        subtareas deben comunicarse 
+                        <br><br>
+                        muchas veces por segundo.
+                        <br>
+                    </b>
+                </p>
+            </div>
+        </div>
+
+
+        <div class="Content">
+                <br><br><br>
+
+                <h3 class="Secondary-Title" id="4-2-1">Taxonomía de las Arquitecturas Paralelas</h3>
+                
+                <br><br>
+                
+                <p>
+                Sistemas de memoria compartida: También conocidos como multiprocesadores de memoria compartida (SMP), estos sistemas constan de varios procesadores que comparten una memoria principal. Los procesadores acceden a la memoria compartida de forma uniforme, lo que permite una comunicación rápida entre ellos. Este tipo de arquitectura es adecuado para aplicaciones que requieren alta comunicación y efectos secundarios entre los procesadores.
+                </p>
+
+                <br><br><br>
+
+                <h3 class="Secondary-Title" id="4-2-2">Arquitectura de las Computadoras</h3>
+
+                <br><br>
+
+                <p>
+                    La arquitectura de computadoras se refiere a la organización lógica del hardware de una computadora, describiendo cómo interactúan entre sí sus componentes. Esto incluye la CPU, el bus de datos, el bus de direcciones, la memoria principal y los dispositivos de entrada/salida. La arquitectura de computadora determina el rendimiento, las capacidades y los límites de un ordenador.
+                </p>
+
+                <br><br><br>
+
+                <p>
+                    La importancia de la arquitectura radica en que define cómo funcionará un ordenador y para qué se puede utilizar. También influye en el rendimiento, el consumo de energía, el tamaño y el coste del ordenador. Existen dos tipos de arquitectura: la de hardware, que se refiere a la implementación de la lógica del ordenador, y la de software, que se refiere a la implementación de la funcionalidad del ordenador.
+                </p>
+                
+                <br><br><br>
+
+                <p>
+                    La arquitectura de computadoras y la arquitectura de software son conceptos diferentes. Mientras que la primera se centra en la lógica del hardware, la segunda se enfoca en la lógica que dirige la funcionalidad del software de un dispositivo.
+
+                    <br>
+                    
+                    La arquitectura de computadoras permite diseñar y construir computadoras, y su comprensión es fundamental para diferenciar los componentes y los tipos de arquitecturas existentes. Algunos de los componentes principales de la arquitectura incluyen la CPU, el bus y la memoria principal.
+
+                </p>
+
+                <br><br><br>
+
+          
+        </div>
+
+
+        <div class="parallax" style="background-image: url('Assets/Servers3.jpg'); padding-top:125px;height:375px;width:100%;">
+            <div class="Content" id="ParallaxContent" style="margin-left:auto;margin-right:auto;">
+                <p>
+                    <b>
+                        <br>
+                        Paralelismo de grano grueso
+                        <br><br>
+                        es cuando una aplicacion NO 
+                        <br><br>
+                        debe de comunicarse
+                        <br><br>
+                        muchas veces por segundo.
+                        <br>
+                    </b>
+                </p>
+            </div>
+        </div>
+
+        <div class="Content">
+            <p>
+
+                <br><br><br>
+
+                La CPU es la unidad central de procesamiento que ejecuta las instrucciones del software, incluido el sistema operativo. El bus se encarga de la comunicación entre los diferentes componentes del ordenador, como el bus de datos, el bus de direcciones y el bus de control. La memoria principal, generalmente la RAM, almacena los programas y datos necesarios para la ejecución de procesos. Y los dispositivos de entrada/salida permiten la interacción del usuario con el ordenador.
+                
+                <br><br><br>
+
+                <h3 class="Tertiary-Title" id="4-2-2-1">Taxonomia de Flynn</h3>
+
+                <br><br>
+
+                <p>
+                La taxonomía de Flynn, propuesta por Michael J. Flynn en 1966, clasifica las computadoras paralelas según la cantidad de instrucciones y el flujo de datos concurrentes que pueden procesar. Se distinguen cuatro tipos de computadoras en esta taxonomía, de los cuales dos son aplicadas a las computadoras paralelas.
+                </p>
+
+                <br><br><br>
+
+                <p>
+                El primer tipo es SISD (Single Instruction Single Data), que se refiere a las computadoras tradicionales y secuenciales donde se ejecuta una instrucción a la vez sobre un único dato en cada ciclo de reloj. Los datos se almacenan en una memoria única y se utilizan técnicas como la segmentación para evitar errores de fragmentación interna.
+                </p>
+
+                <br><br><br>
+
+                <p>
+                El segundo tipo es MISD (Multiple Instruction Single Data), que implica múltiples instrucciones ejecutándose sobre un único dato. Esta arquitectura se considera poco práctica, ya que el paralelismo efectivo requiere múltiples flujos de datos y el acceso simultáneo a un mismo dato en memoria puede generar esperas por recursos disponibles.
+                </p>
+
+                <br><br><br>
+            </p>
+        </div>
+
+
+        <div class="parallax" style="background-image: url('Assets/TechField.jpg'); padding-top:125px;height:375px;width:100%;">
+            <div class="Content" id="ParallaxContent" style="margin-left:auto;margin-right:auto;">
+                <p>
+                    <b>
+                        <br>
+                        Paralelismo Vergonzoso
+                        <br><br>
+                        es cuando una aplicacion nunca 
+                        <br><br>
+                        (o casi nunca) se comunica.
+                        <br><br>
+                        Estas son mas facil de paralelizar
+                        <br>
+                    </b>
+                </p>
+            </div>
+        </div>
+
+        <div class="Content">
+            <p>
+
+                <br><br><br>
+
+                <p>
+                    El tercer tipo es SIMD (Single Instruction Multiple Data), donde se ejecuta una misma instrucción sobre un conjunto de datos. Esta arquitectura es común en ciclos de programación que repiten una instrucción sobre datos de un arreglo. Los datos son procesados ​​por múltiples CPU que ejecutan la misma instrucción en partes del conjunto hasta completar el procesamiento de todos los datos.
+                </p>
+
+                <br><br><br>
+
+                <p>
+                    El cuarto tipo es MIMD (Multiple Instruction Multiple Data), que implica la ejecución de múltiples instrucciones sobre múltiples conjuntos de datos. Esta arquitectura se utiliza mucho hoy en día para aprovechar el paralelismo, ya sea con memoria distribuida, memoria compartida o una combinación de ambas. Muchos multiprocesadores modernos, como los de la tecnología Core i de Intel, se clasifican en esta categoría.
+                </p>
+
+               <br><br><br>
+
+               <h3 class="Tertiary-Title" id="4-2-2-2">Organizacion del Espacio de Direcciones de Memoria</h3>
+
+               <br><br>
+
+               <p>
+                La memoria principal de un sistema informático se organiza como un espacio de direcciones lineal o unidimensional que consta de una secuencia de bytes o palabras.
+                <ul>
+                    <li>Registros de Desplazamiento</li>
+                    <li>Dispositivos de Acoplamiento por Carga</li>
+                    <li>Memorias de Burbuja</li>
+                </ul>
+               </p>
+
+            </p>
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+
+    
+
+    <div class="FootContainer">
+        <p>Credits</p>
+        <address>
+            Programmer: Johan Gurrola <br>
+            Writer: Gabriel Alejandro
+        </address>
+    </div>
+
+    <script src="JS/GeneralFuncs.js"></script>    
+</body>
+</html>
