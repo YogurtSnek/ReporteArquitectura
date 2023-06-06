@@ -1,0 +1,419 @@
+<!DOCTYPE html5>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/basic.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital@1&family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+    <title>Reporte de Unidad 4</title>
+</head>
+<body>
+    <div class="HeadContainer">
+        <div class="Header">
+            <H1>Procedimientos en Paralelo</H1>
+            <h2>Arquitectura de Computadoras</h2>
+        </div>
+        <div id="HeadSticker">
+            <a href="index.html"><img src="Assets/Yogurt.png" alt="It's a Yogurt Snek, with a fashionable tie" width="160"></a>
+        </div>
+        <div id="NavBar">
+            <div id="NavSticker" style="animation: fadeOut 0s linear 0s 1 normal forwards; pointer-events: none;">
+                <div id="AuxNavSticker">
+                    <a href="index.html"><img src="Assets/Yogurt.png" alt="It's a Yogurt Snek, with a fashionable tie" width="55"></a>
+                </div>
+            </div>
+            <ul class="OptionContainer">
+                <li class="MainOptions">
+                    <a href="4-1-Aspectos.html">
+                        Aspectos Basicos <br>
+                        de la computadora <br>
+                        paralela   <br>
+                    </a>
+                </li>
+                <li class="MainOptions">
+                    <a href="4-2-Tipos.html">
+                        Tipos de computacion <br>
+                        paralela
+                    </a>
+                    <ul class="Dropdown">
+                        <li>
+                            <a href="4-2-Tipos.html#4-2-1">
+                                Taxonomia de las Arquitecturas Paralelas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="4-2-Tipos.html#4-2-2">
+                                Arquitectura de las Computadoras
+                            </a>
+                            <ul class="Dropdown" style="left: 100%; top: 0;">
+                                <li>
+                                    <a href="4-2-Tipos.html#4-2-2-1">
+                                        Taxonomia de Flynn
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="4-2-Tipos.html#4-2-2-2">
+                                        Organizacion del Espacio de Direcciones de Memoria
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="MainOptions">
+                    <a href="4-3-SistemasCom.html">
+                        Sistemas de Memoria <br>
+                        Compartida: <br>
+                        Multiprocesadores
+                    </a>
+                    <ul class="Dropdown">
+                        <li>
+                            <a href="4-3-SistemasCom.html#4-3-1">
+                                Redes de Interconexion Dinamicas o Indirectas
+                            </a>
+                            <ul class="Dropdown" style="left: 100%; top: 0;">
+                                <li>
+                                    <a href="4-3-SistemasCom.html#4-3-1-1">
+                                        Redes de Medio Compartido
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="4-3-SistemasCom.html#4-3-1-2">
+                                        Redes Conmutadas
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="4-3-SistemasCom.html#4-3-2">
+                                Coherencia de Cache
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="MainOptions">
+                    <a href="4-4-SistemasDis.html">
+                        Sistemas de Memoria <br>
+                        Distribuida: <br> 
+                        Multicomputadoras: Clusters
+                    </a>
+                    <ul class="Dropdown">
+                        <li>
+                            <a href="4-4-SistemasDis.html#4-4-1">
+                                Redes de Interconexion Estaticas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="4-4-SistemasDis.html#4-4-2">
+                                Cluster
+                            </a>
+                        </li>
+                        <li>
+                            <a href="4-4-SistemasDis.html#4-4-3">
+                                Programacion de Clusters
+                            </a>
+                        </li>
+                        <li>
+                            <a href="4-4-SistemasDis.html#4-4-4">
+                                Consideraciones sobre el Rendimiento de los Clusters
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="MainOptions">
+                    <a href="4-5-Casos.html">
+                        Casos de Estudio
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="BodyContainer">
+        <div class="Content">
+        
+            <h3 class="Primary-Title">
+                Sistemas de Memoria Distribuida. Multicomputadoras: Clusters
+            </h3>
+
+            <p>
+
+                <br><br><br>
+
+                Los sistemas de memoria distribuida, también conocidos como multicomputadoras o clusters, son arquitecturas de computadoras en las que múltiples computadoras independientes están interconectadas y comparten recursos a través de una red. Estos sistemas se utilizan para construir supercomputadoras o infraestructuras de alto rendimiento. En un sistema de memoria distribuida, cada computadora tiene su propia memoria local y procesador, y puede ejecutar programas de forma independiente. Sin embargo, también pueden comunicarse y colaborar entre sí para llevar a cabo tareas complejas que requieren el uso conjunto de recursos.
+
+                <br><br><br>
+
+                Los clusters se caracterizan por su escalabilidad, lo que significa que se pueden agregar o quitar nodos de manera flexible según las necesidades del sistema. Esto permite que los clústeres se adapten a cargas de trabajo variables y permitan un crecimiento incremental de la capacidad de cómputo. Para lograr la comunicación y cooperación entre los nodos del clúster, se utilizan protocolos y middleware específicos que permiten el intercambio de datos y la coordinación de tareas. Los nodos pueden compartir información a través de la red y utilizar algoritmos distribuidos para realizar cálculos paralelos.
+
+                <br><br><br>
+
+                La utilización de sistemas de memoria distribuida presenta ventajas en términos de rendimiento y capacidad de procesamiento. Al distribuir la carga de trabajo entre los nodos, se puede lograr un mayor rendimiento general y una mayor capacidad de procesamiento que si se utilizará una única computadora. Sin embargo, también existen desafíos en el diseño y la programación de sistemas de memoria distribuida. La función y la gestión de la comunicación entre los nodos pueden ser complicadas, y se requieren técnicas especiales para garantizar la coherencia de la memoria y evitar problemas como las condiciones de carrera.
+
+               <br><br><br>
+
+            </p>
+        </div>
+
+        <div class="parallax" style="background-image: url('Assets/SpaceTech.jpg'); padding-top:125px;height:375px;width:100%;">
+            <div class="Content" id="ParallaxContent" style="margin-left:auto;margin-right:auto;">
+                <p>
+                    <b>
+                    <br>
+                    Dentro de los Clusters tambien estan
+                    <br><br>
+                    los MPP (Massive Parallel Processing)
+                    <br><br>
+                    pero estos son especializados gracias
+                    <br><br>
+                    a las redes de interconexion entre procesadores
+                    </b>
+                </p>
+            </div>
+        </div>
+
+        <div class="Content">
+            <p>
+                <br><br><br>
+
+                <h3 class="Secondary-Title" id="4-4-1">Redes de Interconexion Estaticas</h3>
+
+                <br><br>
+
+                <p>
+                Las redes de interconexión estáticas son un tipo de arquitectura utilizada en sistemas de computadoras paralelas, donde la topología de la red se define de manera fija y permanente durante la construcción del sistema. Estas redes se utilizan principalmente en multicomputadoras para conectar los distintos procesadores presentes en la máquina. La función principal de estas redes es permitir la comunicación entre los procesadores a través del intercambio de mensajes, lo que implica un depósito débil entre los nodos de la red.  <br> Una característica de las redes estáticas es que requiere poca carga para su funcionamiento, ya que su diseño se basa en una configuración determinada de conexiones. Esto significa que no se realizan cambios en la topología de la red una vez construida. Esta simplicidad en la estructura contribuye a una mayor eficiencia y reducción de la complejidad de la comunicación entre los nodos.
+                </p>
+
+                <br><br><br>
+
+                <p>
+                En comparación con las redes dinámicas, las redes de interconexión estáticas no pueden modificar su topología durante la ejecución de un programa paralelo. Esto implica que la conexión entre los elementos de la red queda definida de manera permanente, lo que puede limitar la flexibilidad y adaptabilidad del sistema a diferentes requisitos o cambios en las cargas de trabajo. <br> La principal ventaja de las redes de interconexión estáticas es su facilidad de implementación y menor complejidad en comparación con las redes dinámicas. Al tener una topología fija, se simplifica el diseño y la gestión de la red, lo que puede resultar en un menor costo y una mayor confiabilidad. Estas redes son muy utilizadas en sistemas multicomputadoras donde se prioriza la eficiencia en la comunicación y se requiere un compromiso débil entre los nodos.
+                </p>
+
+                <br><br><br>
+
+            </p>
+        </div>
+
+        <div class="parallax" style="background-image: url('Assets/TechField2.jpg'); padding-top:125px;height:375px;width:100%;">
+            <div class="Content" id="ParallaxContent" style="margin-left:auto;margin-right:auto;">
+                <p>
+                    <b>
+                    <br>
+                    Un procesador vectorial 
+                    <br><br>
+                    es un CPU o un sistema computacional 
+                    <br><br>
+                    que puede ejecutar la misma instrucción 
+                    <br><br>
+                    en grandes conjuntos de datos.
+                    </b>
+                </p>
+            </div>
+        </div>
+
+        <div class="Content">
+            <p>
+                <br><br><br>
+
+                <h3 class="Secondary-Title" id="4-4-2">Cluster</h3>
+
+                <br><br>
+
+                <p>
+                    Un clúster es un grupo de ordenadores débilmente acoplados que trabajan en estrecha colaboración, de modo que en algunos aspectos pueden considerarse como un solo equipo. Los clústeres se componen de varias máquinas independientes conectadas por una red. Mientras que las máquinas de un clúster no tienen que ser simétricas, de no serlo, el balance de carga es más difícil de lograr. 
+                </p>
+
+                <br><br><br>
+
+                <p>
+                    El tipo más común de clúster es el cluster Beowulf, que es un clúster implementado con múltiples ordenadores comerciales idénticos conectados a una red de área local TCP/IPEthernet. La tecnología Beowulf fue desarrollada originalmente por Thomas Sterling y Donald Becker. La gran mayoría de los superordenadores TOP500 son clústeres. Se aplica a los conjuntos o conglomerados de computadoras construidos mediante la utilización de hardwares comunes y que se compartan como si fuesen una única computadora.
+                </p>
+
+                <br><br><br>
+
+                <p>
+                    Los clúster son usualmente empleados para mejorar el rendimiento y la disponibilidad por encima de la que es provista por un solo computador típicamente siendo más económico que computadores individuales de rapidez y disponibilidad comparables.De un clúster se espera que presente combinaciones de los siguientes servicios:
+
+                    <ul>
+                        <li>Alto Rendimiento</li>
+                        <li>Alta Disponibilidad</li>
+                        <li>Balance de Carga</li>
+                        <li>Escalabilidad</li>
+                    </ul>
+                    
+                    <br>
+
+                    <p>
+                    La construcción de los ordenadores del clúster es más fácil y económica debido a su flexibilidad: pueden tener toda la misma configuración de hardware y sistema operativo diferente rendimiento pero con arquitectura y sistemas operativos similares o tener diferente hardware y sistema operativo lo que hace más fácil y económica su construcción. 
+                    </p>
+
+                </p>
+
+                <p>
+                    Para que un clúster funcione como tal no basta solo con conectar entre sí los ordenadores, sino que es necesario proveer un sistema de manejo del clúster, el cual se encargue de interactuar con el usuario y los procesos que ocurren en él para optimizar el funcionamiento. La tecnología clúster permite a las organizaciones incrementar su capacidad de procesamiento usando tecnología estándar tanto en componentes de hardware como de software que pueden adquirirse a un costo relativamente bajo.
+                </p>
+
+            </p>
+        </div>
+
+        <div class="parallax" style="background-image: url('Assets/TechField3.jpg'); padding-top:125px;height:375px;width:100%;">
+            <div class="Content" id="ParallaxContent" style="margin-left:auto;margin-right:auto;">
+                <p>
+                    <b>
+                    <br>
+                    La Computacion Distribuida es
+                    <br><br>
+                    la forma de procesamiento paralelo 
+                    <br><br>
+                    mas utilizada gracias a que es utilizable 
+                    <br><br>
+                    atravez del vasto internet
+                    </b>
+                </p>
+            </div>
+        </div>
+
+        <div class="Content">
+            <p>
+                <br><br><br>
+
+                <h3 class="Secondary-Title" id="4-4-3">Programacion de Clusters</h3>
+
+                <br><br>
+
+                <p>
+                La programación de clústeres se refiere al desarrollo y optimización de programas que se ejecutan en sistemas de clúster, los cuales están compuestos por múltiples nodos interconectados. Estos clústeres están especialmente diseñados y optimizados para ejecutar programas en paralelo, lo que significa que los programas deben ser específicamente desarrollados para aprovechar la capacidad de procesamiento de los nodos.
+                </p>
+
+                <br><br><br>
+
+                <p>
+                Los programas paralelos suelen ser modelos que requieren realizar cálculos numéricos intensivos, como simulaciones científicas, análisis de datos masivos, modelado de fluidos o procesamiento de imágenes. La ventaja de programar y ejecutar estos programas en un clúster es que se logra una reducción significativa en los tiempos de procesamiento, ya que los cálculos se distribuyen entre los nodos del clúster y se ejecutan en paralelo.
+                </p>
+
+                <br><br><br>
+
+                <p>
+                Para programar en un clúster, se requiere utilizar esquemas de programación paralelos, que permitan dividir las tareas en subprocesos o hilos que puedan ejecutarse de manera simultánea en los nodos del clúster. Una de las bibliotecas más utilizadas para la programación paralela en clústeres es MPI (Message Passing Interface), que proporciona funciones y rutinas para la comunicación y degrada entre los nodos.
+                </p>
+
+                <br><br><br>
+
+                <p>
+                En el caso específico de los clústeres SCALI, existe una biblioteca llamada SCAMPI que facilita la portabilidad de programas desarrollados con bibliotecas MPI a la plataforma SCALI. Esto simplifica la adaptación de programas existentes para que puedan ejecutarse de manera eficiente en los clústeres SCALI, aprovechando sus capacidades de procesamiento paralelo.
+                </p>
+
+                <br><br><br>
+
+            </p>
+        </div>
+
+        <div class="parallax" style="background-image: url('Assets/Circuitry2.jpg'); padding-top:125px;height:375px;width:100%;">
+            <div class="Content" id="ParallaxContent" style="margin-left:auto;margin-right:auto;">
+                <p>
+                    <b>
+                    <br>
+                    Las tecnicas usadas para mejorar el 
+                    <br><br>
+                    procesamiento paralelo estan llegando
+                    <br><br>
+                    a un punto en el cual ya no se puede mejorar
+                    <br><br>
+                    a este se le refiere como la "Power Wall"
+                    </b>
+                </p>
+            </div>
+        </div>
+
+        <div class="Content">
+            <p>
+                <br><br><br>
+
+                <h3 class="Secondary-Title" id="4-4-4">Consideraciones sobre el Rendimiento de los Clusters</h3>
+
+                <br><br>
+
+                <p>
+                Arquitectura del clúster: La arquitectura del clúster, incluyendo el tipo de interconexión de nodos y la topología de red, puede tener un impacto significativo en el rendimiento. La elección de una arquitectura adecuada para las cargas de trabajo específicas es crucial. Algunas arquitecturas comunes incluyen clústeres basados ​​en autobuses, anillos, mallas o toros.
+                </p>
+
+                <br><br><br>
+
+                <p>
+                Equilibrio de carga: Distribuir la carga de trabajo de manera equilibrada entre los nodos del clúster es esencial para lograr un rendimiento óptimo. El desequilibrio de carga puede provocar que algunos nodos estén sobrecargados mientras que otros están infrautilizados, lo que afecta la eficiencia global del clúster. Se deben implementar algoritmos de equilibrio de carga efectivos para optimizar la utilización de recursos.
+                </p>
+
+                <br><br><br>
+
+            </p>
+        </div>
+
+        <div class="parallax" style="background-image: url('Assets/PowerWall.jpg'); padding-top:125px;height:375px;width:100%;">
+            <div class="Content" id="ParallaxContent" style="margin-left:auto;margin-right:auto;">
+                <p>
+                    <b>
+                    <br>
+                    Las tecnicas usadas para mejorar el 
+                    <br><br>
+                    procesamiento paralelo estan llegando
+                    <br><br>
+                    a un punto en el cual ya no se puede mejorar
+                    <br><br>
+                    a este se le refiere como la "Power Wall"
+                    </b>
+                </p>
+            </div>
+        </div>
+
+        <div class="Content">
+            <p>
+                <br><br><br>
+
+                <p>
+                Comunicación eficiente: La comunicación entre los nodos del clúster es un aspecto crítico para el rendimiento. Se deben utilizar protocolos de comunicación eficientes y optimizar los patrones de comunicación para minimizar la latencia y el tiempo de espera. Además, la elección de la tecnología de red y el ancho de banda disponible también influyen en la eficiencia de la comunicación.
+                </p>
+
+                <br><br><br>
+
+                <p>
+                Sistema de archivos distribuidos: Los sistemas de archivos distribuidos permiten el acceso compartido a los datos entre los nodos del clúster. La elección de un sistema de archivos distribuido adecuado puede mejorar significativamente el rendimiento, ya que afecta la velocidad de acceso a los datos y la capacidad de escalabilidad del clúster. Se deben considerar factores como la redundancia, la tolerancia a fallos y la capacidad de gestión del sistema de archivos.
+                </p>
+
+                <br><br><br>
+
+                <p>
+                Programación paralela y optimización: La programación paralela es fundamental para aprovechar al máximo el rendimiento de los clústeres. Se deben utilizar modelos de programación paralela, como MPI (Message Passing Interface) o OpenMP, para dividir las tareas en subprocesos que se ejecutan en paralelo en los nodos del clúster. Además, es importante optimizar los algoritmos y el código para minimizar la sobrecarga y maximizar la eficiencia de la ejecución paralela.
+                </p>
+
+                <br><br><br>
+
+            </p>
+        </div>
+
+
+
+
+
+
+
+
+
+    </div>
+
+    
+
+    <div class="FootContainer">
+        <p>Credits</p>
+        <address>
+            Programmer: Johan Gurrola <br>
+            Writer: Gabriel Alejandro
+        </address>
+    </div>
+
+    <script src="JS/GeneralFuncs.js"></script>    
+</body>
+</html>

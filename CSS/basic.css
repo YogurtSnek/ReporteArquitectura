@@ -235,6 +235,12 @@ body {
 #ParallaxContent {
     border: #1ee3ce 3px solid;
     backdrop-filter: blur(5px);
+    text-shadow:
+   0 0 1px #000,
+   -1px -1px 0 #000,  
+   1px -1px 0 #000,
+   -1px 1px 0 #000,
+   1px 1px 0 #000;
     height: 250px;
 }
 

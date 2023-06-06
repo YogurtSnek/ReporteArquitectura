@@ -164,6 +164,7 @@
                 El multiproceso para tareas generales puede ser sencillo de lograr, ya que puede haber varios programas manipulando datos internos simultáneamente. Esto puede resultar en interferencias si dos copias del programa se ejecutan en diferentes procesadores y tratan de leer o escribir en su estado al mismo tiempo.
                 </p>
 
+                <br><br><br>
             </p>
         </div>
 
@@ -241,7 +242,7 @@
             <p>
                 <br><br><br>
 
-                <h3 class="Secondary-Title" id="4-3-1-1">Redes de Medio Compartido</h3>
+                <h3 class="Tertiary-Title" id="4-3-1-1">Redes de Medio Compartido</h3>
 
                 <br><br>
 
@@ -271,7 +272,113 @@
 
             </p>
         </div>
-  </div>
+
+        <div class="parallax" style="background-image: url('Assets/BuildPC2.jpg'); padding-top:125px;height:375px;width:100%;">
+            <div class="Content" id="ParallaxContent" style="margin-left:auto;margin-right:auto;">
+                <p>
+                    <b>
+                    <br>
+                    Existen computadoras
+                    <br><br>
+                    con multiples unidades de ejecucion
+                    <br><br>
+                    conocidas como multinucleo las cuales
+                    <br><br>
+                    se ven involucradas mucho en el paralelismo
+                    </b>
+                </p>
+            </div>
+        </div>
+    
+    
+        <div class="Content">
+            <p>
+                <br><br><br>
+    
+                <h3 class="Tertiary-Title" id="4-3-1-2">Redes Conmutadas</h3>
+    
+                <br><br>
+    
+                <p>
+                    Se define a la arquitectura de conmutación por paquete a los sistemas involucrados en la información/datos que se transmitirán individualmente y este puede seguir por varias rutas para llegar a su destino final, se debe tener presente que este tipo de arquitectura es mucho más eficiente al momento de enviar los datos entre estos: correo electrónico, páginas web, archivos, etc.
+                </p>
+    
+                <br><br><br>
+    
+                <p>
+                    También debemos considerar que las aplicaciones como voz, video, o audio la conmutación de paquetes no es muy recomendable a menos que se garantice un ancho de banda adecuado con los megabytes que se requieren.  
+                </p>
+            
+                <br><br><br>
+    
+                <p>
+                    Se considera que una red por software es aquella que se administra a través de una red la cual puede dar forma a la arquitectura mediante una consola de control para evitar estragos en las conmutaciones, es recomendado que el usuario(administrador) defina si es necesario cambiar las reglas de los conmutadores de la red dando así un beneficio verídico en el control de la red y obtener las ventajas competitivas en este caso dado.
+                </p>
+    
+                <br><br><br>
+    
+                <p>
+                    En este tipo de arquitectura se considera un aspecto innovador que permite que la red por software obtenga un desarrollo notorio en la evolución e implementación radicada para los usuarios sea esta de manera visual, transparente dando cabida a la realización de pruebas para así determinar la importancia del servicio, se toma en cuenta que este tipo de arquitectura debe trabajar conjuntamente con MINIEDIT la cual esta posee una interfaz gráfica.
+                </p>
+    
+                <br><br><br>
+    
+            </p>
+        </div>
+    
+        <div class="parallax" style="background-image: url('Assets/Servers5.jpg'); padding-top:125px;height:375px;width:100%;">
+            <div class="Content" id="ParallaxContent" style="margin-left:auto;margin-right:auto;">
+                <p>
+                    <b>
+                    <br>
+                    Tambien existen conjuntos de multiples
+                    <br><br>
+                    ordenadores debilmente acoplados
+                    <br><br>
+                    que trabajan en estrecha colaboracion
+                    <br><br>
+                    a estos se les conoce como Clusters
+                    </b>
+                </p>
+            </div>
+        </div>
+    
+        <div class="Content">
+            <p>
+                <br><br><br>
+    
+                <h3 class="Secondary-Title" id="4-3-2">Coherencia de Cache</h3>
+    
+                <br><br>
+    
+                <p>
+                    La coherencia de caché se refiere a mantener la integridad de los datos almacenados en los cachés locales de recursos compartidos. Es un aspecto importante de la coherencia de la memoria. En sistemas donde varios clientes, como las CPU en un multiprocesador, tienen sus propios cachés de una memoria compartida, surgen conflictos. Si un cliente tiene una copia de un bloque de memoria y otro cliente realiza cambios en ese bloque, el primer cliente podría estar trabajando con datos incorrectos sin ser consciente de ello. La coherencia de caché se encarga de gestionar estos conflictos y mantener la consistencia entre las cachés y la memoria.
+                </p>
+    
+                <br><br><br>
+    
+                <p>
+                    Existen diferentes mecanismos para lograr la coherencia de caché. Los protocolos basados ​​en directorio mantienen un directorio centralizado que registra los bloques presentes en las cachés. Estos protocolos se utilizan tanto en multiprocesadores con memoria distribuida como en sistemas con memoria centralizada y red escalable. Estos protocolos reducen el tráfico en la red al enviar órdenes selectivas solo a las cachés que contienen una copia del bloque válido en cuestión.
+                </p>
+            
+                <br><br><br>
+    
+                <p>
+                    El protocolo Snoopy hace que cada caché supervise individualmente las líneas de direcciones de acceso a memoria y los bloques que ha copiado. Cuando se detecta una operación de escritura en una dirección de un bloque que una caché ha copiado, la caché invalida su copia. También es posible que la caché observe la dirección y los datos correspondientes a esa dirección, intentando actualizar su copia cuando alguien modifique ese bloque en la memoria principal.  <br> El protocolo de memoria distribuida imita a los anteriores y busca mantener la consistencia entre los bloques de memoria en sistemas con debilitamiento.
+    
+                </p>
+    
+                <br><br><br>
+    
+                <p>
+                    Existen varios modelos y protocolos para mantener la coherencia de caché, como el protocolo MSI, MESI, MOSI y MOESI. La elección de un modelo de coherencia es crucial al diseñar un sistema de caché coherente, ya que pueden tener diferencias en rendimiento y escalabilidad, por lo que deben ser evaluados según las necesidades del sistema. <br>Además, las transiciones entre estados en la implementación de estos protocolos pueden variar, lo que puede afectar el tráfico entre las cachés y el ancho de banda disponible. Esto debe tenerse en cuenta al diseñar el software distribuido para evitar problemas de contención entre las cachés de múltiples procesadores.
+                </p>
+    
+                <br><br><br>
+    
+            </p>
+        </div>
+    </div>
 
     
 
