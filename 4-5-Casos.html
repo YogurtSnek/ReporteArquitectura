@@ -143,26 +143,33 @@
 
                 <br><br><br>
 
-                La computación paralela es un enfoque que utiliza múltiples recursos de procesamiento 
-                para resolver problemas complejos de manera más eficiente. En lugar de realizar las tareas 
-                de manera secuencial, la computación paralela divide el trabajo en partes más pequeñas que 
-                se ejecutan simultáneamente en diferentes procesadores. Esto permite una mayor capacidad 
-                de procesamiento y acelera la solución de problemas.
+                Los multiprocesadores, asi como otras arquitecturas de procesamiento paralelo, surgieron de la necesidad de resolver problemas que se denominan del procesamiento intenso tales como: <br> La investigación  en el campo de la astrología donde las aplicaciones procesan grandes imágenes. 
 
+                <br>
+                Dentro de  el multiproceso existen dos tipos de arquitectura claramente diferenciada:
+                <br><br>
+                -Arquitectura con memoria compartida.
+                <br>
+                -Arquitecturas con memoria distribuida.
                 <br><br><br>
+                Multiprocesadores. Arquitecturas memoria compartida:
 
-                Los sistemas de computación paralela se componen de múltiples procesadores que trabajan 
-                en conjunto para completar una tarea. Estos procesadores pueden estar en un solo dispositivo 
-                o distribuidos en una red de computadoras interconectadas. Para aprovechar al máximo la 
-                capacidad de procesamiento paralelo, es necesario dividir el problema en tareas 
-                independientes que puedan ejecutarse simultáneamente y luego combinar los resultados.
+                <p>
+                La comunicación entre procesadores normalmente se hace a través de la memoria mediante el uso de la variable compartidos. Si el número de componentes de la arquitectura es reducido, puede ser suficiente un bus de datos digital lo bastante ancho(suficiente hilos) para comunicar los componentes. Arquitectura grande utilizan como modelo de interconexión una red crossbar o una red multietapa
+                </p>
 
-               <br><br><br>
+                <p>
+                    Este tipo de multiprocesadores debe utilizar memorias cachés suficientemente grandes. Cada procesador tendrá su memoria caché independiente y privada para evitar, más de lo necesario, la búsqueda de datos en la memoria principal, y por tanto, impedir un cuello de botella cuando varios procesadores requieran acceder a datos de memoria al mismo tiempo.
+                    <br><br>
+                    Estas arquitecturas son las más utilizadas en la actualidad, puesto que ofrecen buenas prestaciones por tener varios procesadores trabajando en paralelo. además, la gestión de varios procesadores se hace muy sencilla por estar muy compactos y apenas se consumen recursos para este fin
+                </p>
+                
+                <br><br><br>
 
             </p>
         </div>
 
-        <div class="parallax" style="background-image: url('Assets/Cascade.jpg'); padding-top:125px;height:375px;width:100%;">
+        <div class="parallax" style="background-image: url('Assets/Circuitry3.jpg'); padding-top:125px;height:375px;width:100%;">
             <div class="Content" id="ParallaxContent" style="margin-left:auto;margin-right:auto;">
                 <p>
                     <b>
@@ -183,21 +190,20 @@
             <p>
                 <br><br><br>
 
-                La computación paralela se utiliza en una variedad de campos, como la simulación científica,
-                 la inteligencia artificial, el procesamiento de imágenes y el análisis de datos masivos. 
-                 Permite el procesamiento rápido de grandes volúmenes de información y mejora el rendimiento
-                  de las aplicaciones que requieren un alto grado de cálculo. Al utilizar recursos de manera
-                   más eficiente, la computación paralela puede reducir significativamente el tiempo 
-                   necesario para resolver problemas complejos.
+                
+                Multiprocesadores. Arquitecturas con memoria distribuida
+                <br><br>
+                <p>
+                En el caso de arquitecturas con memoria distribuida, todos los procesadores poseen una memoria privada. Es decir, que no todos pueden acceder a todas las posiciones de memoria, y hay varios modelos de memoria independientes que no comparten el mismo direccionamiento. Pueden trabajar con datos de memoria compartidos, pero la gestión de la memoria compartida es mucho más costosa que en el otro tipo de multiprocesadores, puesto que no comparten ningún módulo de memoria principal. 
+                </p>
 
                 <br><br><br>
-
-                Para implementar la computación paralela, se requiere software y hardware especializados. 
-                Los programadores deben diseñar algoritmos que se puedan ejecutar de manera concurrente y 
-                utilizar técnicas de diferente para asegurar la consistencia de los resultados. Además, 
-                los sistemas de computación paralela deben contar con una infraestructura adecuada, 
-                como redes de alta velocidad y memoria compartida o distribuida, para facilitar la 
-                comunicación y la transferencia de datos entre los procesadores.
+                
+                <p>
+                Una ventaja que tiene principal de esta arquitectura miramos por otro lado, la estabilidad, ya que permiten maximizar el número de procesadores sin grandes cambios en la arquitectura, por lo tanto ofrecen una solución al problema del ancho de banda, ya que los procesadores no comparten la misma memoria principal y hay menos comunicaciones. 
+                <br>
+                Por último tenemos una desventaja que se debe decir es que la gestión de datos procesadores, especialmente cuando trabajan en problemas comunes, y el envió de datos a través de la red es más lento debido a los protocolos de comunicación.
+                </p>             
 
                 <br><br><br>
 
